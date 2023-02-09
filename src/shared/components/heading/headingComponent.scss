@@ -1,0 +1,31 @@
+@import "src/assets/styles/common";
+
+.heading-wrapper {
+
+  display: flex;
+  align-items: center;
+
+  .heading-title-with-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    .form-go-back {
+      position: relative;
+      top: 3px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .heading-title {
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+}
+

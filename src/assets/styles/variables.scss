@@ -1,0 +1,145 @@
+@import "mixins";
+
+$primary-color: #DE1D4C;
+$secondary-color: #3E6BBE;
+$accent-color: #FFE49A;
+$warn-color: #c00000;
+$white: #ffffff;
+$black: #000000;
+
+$default-color: #E8ECEF;
+$error-color: $warn-color;
+$success-color: #59f666;
+$warning-color: #ffa335;
+$info-color: #1a67ff;
+
+$font-family: 'Lato';
+
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$header-height: 60;
+
+
+$body-background-color: #FFFFFF;
+$body-color: #202020;
+
+// Input Variables
+$input-background-color: #FCFCFC;
+$input-border-color: #F5F5F5;
+$input-error-border-color: $warn-color;
+$input-error-color: $warn-color;
+$input-border: 1px solid $input-border-color;
+$input-border-radius: 5px;
+$input-padding: 2px 8px;
+$input-font-size: 16px;
+$input-line-height: 44px;
+$input-color: #AFBAC0;
+$input-color: $body-color;
+$input-placeholder-color: #AFBAC0;
+$input-font-weight: $font-weight-normal;
+$input-font-family: $font-family;
+$input-sm-padding: 1px 6px;
+$input-sm-line-height: 30px;
+$input-sm-font-size: 12px;
+$input-xl-padding: 4px 10px;
+$input-xl-line-height: 48px;
+$input-xl-font-size: 20px;
+
+// Label Variables
+$label-color: $body-color;
+$label-font-weight: $font-weight-bold;
+$label-error-color: $warn-color;
+$label-font-family: $font-family;
+
+// Helper Text Variables
+$helper-text-font-family: $font-family;
+$helper-text-font-size: 13px;
+
+// Button Variables
+$button-border-radius: 5px;
+$button-disabled-opacity: 0.7;
+$button-font-family: $font-family;
+$button-padding: 5px 20px;
+$button-font-size: 16px;
+$button-height: 40px;
+$button-spinner-border-width: 4px;
+$button-spinner-height: 20px;
+$button-spinner-width: 20px;
+
+$button-sm-padding: 2px 15px;
+$button-sm-font-size: 12px;
+$button-sm-height: 32px;
+$button-sm-spinner-border-width: 2px;
+$button-sm-spinner-height: 16px;
+$button-sm-spinner-width: 16px;
+
+$button-lg-padding: 7px 22px;
+$button-lg-font-size: 20px;
+$button-lg-height: 48px;
+$button-lg-spinner-border-width: 5px;
+$button-lg-spinner-height: 24px;
+$button-lg-spinner-width: 24px;
+
+$button-xl-padding: 8px 24px;
+$button-xl-font-size: 24px;
+$button-xl-height: 60px;
+$button-xl-spinner-border-width: 6px;
+$button-xl-spinner-height: 30px;
+$button-xl-spinner-width: 30px;
+
+$primary-button-base-color: $primary-color;
+$primary-button-spinner-color-1: #ffffff;
+$primary-button-spinner-color-2: $primary-button-base-color;
+$primary-button-border: 1px solid $primary-button-base-color;
+$primary-button-color: #ffffff;
+$primary-button-background-color: $primary-button-base-color;
+$primary-button-hover-background-color: colorDarkness($primary-button-base-color, 10);
+$primary-button-hover-color: #ffffff;
+$primary-button-focus-background-color: colorDarkness($primary-button-base-color, 10);
+$primary-button-focus-color: #ffffff;
+$primary-button-active-background-color: colorDarkness($primary-button-base-color, 10);
+$primary-button-active-color: #ffffff;
+$primary-button-disabled-background-color: colorDarkness($primary-button-base-color, 10);
+$primary-button-disabled-color: #ffffff;
+
+// Checkbox Variables
+$checkbox-border-color: $primary-color;
+$checkbox--font-size: 14px;
+$checkbox-checked-background-color: $primary-color;
+
+// Select
+$select-line-height: 44px;
+$select-font-size: 16px;
+$select-font-weight: $font-weight-normal;
+$select-font-family: $font-family;
+$select-placeholder-color: #AFBAC0;
+$select-border-color: #F5F5F5;
+$select-border: 1px solid $select-border-color;
+
+// Radio Button
+$radio-button-height: 20px;
+$radio-button-width: 20px;
+$radio-button-inner-circle-height: 12px;
+$radio-button-inner-circle-width: 12px;
+$radio-button-font-size: 16px;
+$radio-button-font-weight: $font-weight-normal;
+$radio-button-font-family: $font-family;
+$radio-button-border: 2px solid #8f8f8f;
+$radio-button-active-border-color: $primary-color;
+
+// Status card Variables
+$status-card-font-family: $font-family;
+$status-card-color: #496370;
+$status-card-font-weight: $font-weight-thin;
+$status-card-default-bg-color: $default-color;
+$status-card-error-bg-color: $error-color;
+$status-card-warning-bg-color: $warning-color;
+$status-card-success-bg-color: $success-color;
+$status-card-info-bg-color: $info-color;
+
+// Progressbar Variables
+$progressbar-default-bg-color: #D6E8FF;
+$progressbar-filled-bg-color: #005BCA;

@@ -1,0 +1,24 @@
+@import "src/assets/styles/common";
+
+.header {
+  //padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  //background-color: #ffffff;
+  //z-index: 1;
+  width: inherit;
+  height: inherit;
+  .menu-toggle-icon {
+
+  }
+
+  .header-options {
+    display: flex;
+
+    .header-option {
+      margin: 0 5px;
+    }
+  }
+}

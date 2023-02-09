@@ -1,0 +1,12 @@
+@import "src/assets/styles/common";
+
+.error-component {
+  position: absolute;
+  top: 2px;
+  right: 0;
+
+  .helper-text-component{
+    white-space: nowrap;
+    font-style: italic;
+  }
+}

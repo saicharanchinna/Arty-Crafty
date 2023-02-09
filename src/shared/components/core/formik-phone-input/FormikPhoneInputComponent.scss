@@ -1,0 +1,61 @@
+@import "src/assets/styles/common";
+
+.phone-input-component {
+  margin: 0 0 24px;
+
+  .phone-input-flag-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    background: $input-background-color;
+    color: $input-color;
+    border-radius: $input-border-radius;
+    outline: none;
+    padding: $input-padding;
+    border: $input-border;
+
+    &.has-error {
+      color: $input-error-color;
+      border: 1px solid $input-error-border-color;
+    }
+
+    .phone-input-flag-prefix-wrapper {
+      display: flex;
+      align-items: center;
+      flex: 0;
+
+      .phone-input-flag-wrapper {
+
+        .phone-input-flag-icon {
+
+        }
+
+      }
+
+      .phone-input-flag-prefix {
+        padding: 0 10px;
+        border-right: $input-border;
+      }
+    }
+
+    .phone-input-flag-input-container {
+      flex: 1;
+
+      .input-component {
+        margin: 0;
+
+        .input-field {
+          border: none;
+          line-height: 40px;
+        }
+      }
+
+    }
+  }
+
+  .error-component {
+    top: -28px !important;
+  }
+
+}

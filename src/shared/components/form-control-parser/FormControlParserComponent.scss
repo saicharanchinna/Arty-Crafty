@@ -1,0 +1,140 @@
+@import "src/assets/styles/common";
+
+.form-control-parser {
+  &.sub-question {
+    padding: 1px 17px;
+    background-color: #FDF1F3;
+  }
+
+  .radio-button-group-component {
+
+    &.main-question {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #F5F5F5;
+      box-shadow: 0 4px 5px rgba(213, 232, 255, 0.6);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      //overflow-x: hidden;
+
+      .formik-radio-button-component {
+        display: flex;
+        flex: 1;
+
+        .radio-button-component {
+          flex: 1;
+          padding: 20px;
+          cursor: pointer;
+
+          &.checked {
+            background-color: #FDF1F3;
+            border: 1px solid #FFE1E8;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+    &.sub-question {
+      display: flex;
+      background-color: #FFE1E8;
+      border: 1px solid #FFE1E8;
+    }
+
+  }
+
+  .date-picker-component {
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0 4px 5px rgba(213, 232, 255, 0.6);
+    border-radius: 5px;
+  }
+
+  .dropdown-group-component {
+
+    &.main-question {
+      //overflow-x: hidden;
+      .select-dropdown-component {
+        background: #FFFFFF;
+        box-shadow: 0 4px 16px rgba(213, 232, 255, 0.6);
+        border-radius: 5px;
+      }
+
+    }
+  }
+
+
+  .check-box-group-component {
+
+    &.main-question {
+      margin-bottom: 24px;
+      box-shadow: 0 4px 5px rgb(213 232 255 / 60%);
+      border: 1px solid #F5F5F5;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      //overflow-x: hidden;
+
+      .formik-checkbox-component {
+        width: 100%;
+        cursor: pointer;
+
+        .checkbox-component {
+          height: auto;
+          margin: 0;
+          padding: 24px;
+
+          &.checked {
+            background-color: #FDF1F3;
+
+            &.main-question {
+              border: 1px solid #FFE1E8;
+            }
+          }
+
+          .checkbox-container {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .horizontal-align {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .sub-question {
+      @include lg {
+        &:first-child {
+          padding-right: 0;
+        }
+
+        &:last-child {
+          padding-left: 0;
+          width: 100% !important;
+        }
+      }
+    }
+
+    // TODO Handle at component level by size
+    .radio-button-control-label {
+      display: block;
+      padding: 3px 0 0 30px;
+      cursor: pointer;
+      position: relative;
+      font-size: 14px;
+    }
+
+    .radio-button-component {
+      margin-right: 5px;
+    }
+
+    @include lg() {
+      //overflow: hidden;
+      flex-direction: row;
+    }
+  }
+}

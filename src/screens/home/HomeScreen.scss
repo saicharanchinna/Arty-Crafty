@@ -1,0 +1,128 @@
+@import "src/assets/styles/common";
+
+.home-screen {
+
+  overflow: hidden;
+
+  .home-page-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+
+    @include md(){
+      justify-content: center;
+    }
+
+    .home-page-content-title {
+      color: #000000;
+      opacity: 0.5;
+      font-size: 20px;
+      font-weight: 700;
+
+      @include lg() {
+        font-size: 24px;
+      }
+
+    }
+
+    .home-page-content-main-title {
+      color: #000000;
+      font-size: 24px;
+      font-weight: 700;
+
+      @include md() {
+        font-size: 28px;
+      }
+
+      @include lg() {
+        font-size: 36px;
+      }
+
+      @include xl() {
+        font-size: 40px;
+      }
+    }
+
+    .get-free-screening-service-btn {
+      @include md() {
+        font-size: 17px;
+      }
+    }
+
+    .home-page-content-description {
+      color: #000000;
+      opacity: 0.5;
+      font-size: 16px;
+      padding: 20px 0 30px 0;
+
+      @include lg() {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .branding-logo {
+    text-align: end;
+    padding: 15px 0 0;
+    @include lg() {
+      padding: 30px;
+    }
+  }
+
+  .home-page-poster-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+    padding: 0 20px 0 10px;
+    align-items: center;
+
+    @include md() {
+      padding: 0 30px 0 20px;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+
+    @include lg() {
+      padding: 0 40px 0 30px;
+      height: calc(100vh - 200px);
+    }
+
+    @include xl() {
+      padding: 0 50px 0 40px;
+    }
+
+    .home-page-poster-image {
+      height: 150px;
+      width: auto;
+      overflow: hidden;
+      box-shadow: 14px 14px $primary-color;
+      border-radius: 15px;
+
+      @include md() {
+        height: 250px;
+        box-shadow: 24px 24px $primary-color;
+      }
+
+      @include lg() {
+        height: 350px;
+        box-shadow: 34px 34px $primary-color;
+      }
+
+      @include xl() {
+        height: auto;
+        box-shadow: 44px 44px $primary-color;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+    }
+  }
+}

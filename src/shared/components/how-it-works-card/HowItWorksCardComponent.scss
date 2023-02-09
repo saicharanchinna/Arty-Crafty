@@ -1,0 +1,55 @@
+@import "src/assets/styles/common";
+
+.how-it-works-component {
+
+  &.card-container {
+    width: 100%;
+    padding: 20px;
+    background: #FAFAFA;
+    box-shadow: 0 4px 5px rgba(212, 232, 255, 0.6);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    @include md() {
+      padding: 25px;
+      height: 280px;
+    }
+
+    @include lg() {
+      padding: 30px;
+      height: 250px;
+    }
+
+    .card-icon {
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include md() {
+      }
+
+      @include lg() {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .title {
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 16px;
+      color: #000000;
+      opacity: 0.6;
+    }
+  }
+}
