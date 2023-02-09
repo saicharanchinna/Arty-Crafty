@@ -1,0 +1,125 @@
+@import "src/assets/styles/common";
+
+.date-picker-component {
+  position: relative;
+  margin: 0 0 24px;
+
+  &.fullWidth {
+    //width: calc(100% - (2 * 8px + 2 * 1px));
+    width: 100%;
+
+    .date-picker-field {
+      width: 100%;
+    }
+  }
+
+  @include md() {
+    margin: 0 0 15px;
+  }
+
+  .react-calendar__viewContainer {
+    .react-calendar__month-view {
+      .react-calendar__month-view__weekdays__weekday {
+        abbr {
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  .date-picker-field {
+    width: 100%;
+    background: $input-background-color;
+    color: $input-color;
+    border-radius: $input-border-radius;
+    outline: none;
+    padding: $input-padding;
+    border: $input-border;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    font-weight: $input-font-weight;
+    font-family: $input-font-family;
+
+    .react-calendar {
+      border: $input-border;
+      border-radius: $input-border-radius;
+      overflow: hidden;
+    }
+
+    .react-date-picker__wrapper {
+      border: none;
+    }
+
+    .react-calendar__tile--now {
+      background-color: #817D7FFF;
+      color: $white;
+    }
+
+    .react-calendar__tile--active {
+      background: $primary-color;
+    }
+
+    .react-date-picker__inputGroup__input {
+      outline: none;
+    }
+
+    .react-date-picker__inputGroup__input:invalid {
+      background: none;
+    }
+
+
+    .react-calendar__navigation {
+      background: $primary-color;
+
+      button {
+        color: $white;
+        font-size: 15px;
+        font-weight: 900;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+
+    &:disabled {
+      background: colorDarkness($input-background-color, 10);
+    }
+
+    &:hover {
+      //  border: 1px solid colorDarkness($input-border-color, 15);
+    }
+
+    &:focus, &:active {
+      // border: 1px solid colorDarkness($input-border-color, 30);
+    }
+
+    &.has-error {
+      color: $input-error-color;
+      border: 1px solid $input-error-border-color;
+    }
+
+  }
+
+  &.sm {
+    .date-picker-field {
+      padding: $input-sm-padding;
+      line-height: $input-sm-line-height;
+      font-size: $input-sm-font-size;
+    }
+  }
+
+  &.xl {
+    .date-picker-field {
+      padding: $input-xl-padding;
+      line-height: $input-xl-line-height;
+      font-size: $input-xl-font-size;
+    }
+  }
+
+}

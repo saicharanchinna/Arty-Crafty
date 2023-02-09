@@ -1,0 +1,76 @@
+@import "src/assets/styles/common";
+
+.input-component {
+  position: relative;
+  margin: 0 0 24px;
+  width: 200px;
+
+  &.fullWidth {
+    width: 100%;
+
+    .input-field {
+      width: 100%;
+    }
+  }
+
+  @include md() {
+    margin: 0 0 15px;
+  }
+
+  .input-field {
+    width: 100%;
+    background: $input-background-color;
+    color: $input-color;
+    border-radius: $input-border-radius;
+    outline: none;
+    padding: $input-padding;
+    border: $input-border;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    font-weight: $input-font-weight;
+    font-family: $input-font-family;
+
+    &::placeholder {
+      color: $input-placeholder-color;
+    }
+
+    &:disabled {
+      background: colorDarkness($input-background-color, 10);
+    }
+
+    &:hover {
+      //  border: 1px solid colorDarkness($input-border-color, 15);
+    }
+
+    &:focus, &:active {
+      // border: 1px solid colorDarkness($input-border-color, 30);
+    }
+
+    &.has-error {
+      color: $input-error-color;
+      border: 1px solid $input-error-border-color;
+    }
+
+    &.text-transform{
+      text-transform: capitalize !important;
+    }
+
+  }
+
+  &.sm {
+    .input-field {
+      padding: $input-sm-padding;
+      line-height: $input-sm-line-height;
+      font-size: $input-sm-font-size;
+    }
+  }
+
+  &.xl {
+    .input-field {
+      padding: $input-xl-padding;
+      line-height: $input-xl-line-height;
+      font-size: $input-xl-font-size;
+    }
+  }
+
+}

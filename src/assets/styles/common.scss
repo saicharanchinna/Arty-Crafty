@@ -1,0 +1,25 @@
+@import "animations";
+@import "variables";
+@import 'react-toastify/dist/ReactToastify.css';
+@import "fonts";
+
+@import "helpers";
+@import "mixins";
+@import "responsive-mixins";
+@import "responsive-display";
+@import "normalize";
+
+// components
+@import "components/button";
+@import "components/loader";
+@import "components/form-controls";
+@import "components/scrollbar";
+
+.app-version {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  font-size: 10px;
+  font-weight: $font-weight-bold;
+  opacity: 0.5;
+}

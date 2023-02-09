@@ -1,0 +1,81 @@
+@import "src/assets/styles/common";
+
+.gauge-meter-component {
+
+  .gauge-meter-chart-wrapper {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gauge-meter-risk-factor-wrapper {
+
+    padding-top: 50px;
+
+    .gauge-meter-risk-factor-label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #DCDCDC;
+    }
+
+    .gauge-meter-risk-factor-value {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+    }
+  }
+
+  .gauge-meter-line-separator {
+    height: 1px;
+    background: #000000;
+    margin: 30px;
+    padding: 0 30px;
+    width: 80%;
+    @include lg() {
+      width: 100%;
+      margin: 30px 0;
+    }
+  }
+
+  .gauge-meter-legends-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .gauge-meter-legend-item {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+
+      .gauge-meter-legend-dot {
+        height: 14px;
+        width: 14px;
+        background: #2d2d2d;
+        border-radius: 50%;
+
+        &.low {
+          background: #24C765;
+        }
+
+        &.medium {
+          background: #F6E544;
+        }
+
+        &.high {
+          background: #DE1D4C;
+        }
+      }
+
+      .gauge-meter-legend-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F5F5F5;
+        margin-left: 10px;
+      }
+    }
+  }
+
+}

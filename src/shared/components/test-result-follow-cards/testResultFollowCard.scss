@@ -1,0 +1,43 @@
+@import "src/assets/styles/common";
+
+.test-result-follow-card-wrapper {
+  background: #FCFCFC;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  .test-result-follow-card-icon {
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+    @include lg(){
+      padding: 10px;
+      margin: 15px;
+      text-align: center;
+      position: relative;
+      bottom: 15px;
+    }
+  }
+
+  .test-result-follow-card-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #202020;
+    @include lg(){
+      font-size: 18px;
+    }
+  }
+
+  .test-result-follow-card-description {
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+    opacity: 0.5;
+    padding: 10px 0 0 0;
+    line-height: 24px;
+    @include lg(){
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import "src/assets/styles/common";
+
+.checkbox-component {
+  clear: both;
+  height: 20px;
+  margin: 0 0 24px;
+  position: relative;
+
+  &.full-label {
+    .label-component {
+      white-space: normal;
+      overflow: auto;
+      text-overflow: unset;
+    }
+  }
+
+  .label-component {
+    margin: 0 !important;
+    font-size: $checkbox--font-size;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+  }
+
+  .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    margin-bottom: 15px;
+  }
+
+  .checkbox-container .checkbox-field {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkbox-checkmark {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid $checkbox-border-color;
+  }
+
+  .checkbox-container:hover .checkbox-field ~ .checkbox-checkmark {
+    background-color: colorDarkness(#fff, 2);
+  }
+
+  .checkbox-container .checkbox-field:checked ~ .checkbox-checkmark {
+    background-color: $checkbox-checked-background-color;
+  }
+
+  &.checked {
+    .checkbox-container .checkbox-field:checked ~ .checkbox-checkmark {
+
+    }
+  }
+
+  .checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-container .checkbox-field:checked ~ .checkbox-checkmark:after {
+    display: block;
+  }
+
+  .checkbox-container .checkbox-checkmark:after {
+    border: solid #FFFFFF;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    left: 6px;
+    top:  3px;
+    width: 3px;
+    height: 7px;
+    border-width: 0 3px 3px 0;
+    border-radius: 1px;
+  }
+
+  &.checked {
+    .checkbox-checkmark {
+      border-color: colorDarkness($checkbox-border-color, 5);
+    }
+  }
+
+}
+

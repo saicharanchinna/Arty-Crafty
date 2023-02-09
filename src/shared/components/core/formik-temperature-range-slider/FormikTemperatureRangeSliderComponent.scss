@@ -1,0 +1,90 @@
+@import "src/assets/styles/variables";
+
+// Base Colors
+$color1: $accent-color !default;
+$color2: $primary-color !default;
+
+// Range Slider
+$range-width: 100% !default;
+$range-handle-size: 48px !default;
+$range-track-height: 8px !default;
+$range-label-width: 60px !default;
+$range-handle-color: #ddd;
+$range-track-color: #ddd;
+
+.formik-range-slider-component {
+  margin: 60px 0;
+  width: $range-width;
+  position: relative;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: $range-track-height;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #FFE49A 50%, #60FA9D 60%, #FF5A82);
+  outline: none;
+  padding: 0;
+  margin: 0;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: $range-handle-size;
+    height: $range-handle-size;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./../../../../assets/images/person.png");
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      //background: #DDD;
+    }
+
+  }
+
+  &:active::-webkit-slider-thumb {
+    //background: #DDD;
+  }
+
+  &::-moz-range-thumb {
+    width: $range-handle-size;
+    height: $range-handle-size;
+    border: 0;
+    border-radius: 50%;
+    background: $range-handle-color;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background: #DDD;
+    }
+  }
+
+  &:active::-moz-range-thumb {
+    background: #DDD;
+  }
+}
+
+// Firefox Overrides
+::-moz-range-track {
+  background: $range-track-color;
+  background: linear-gradient(90deg, #FFE49A 50%, #60FA9D 60%, #FF5A82);
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+.range-slider-label {
+  position: absolute;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  top: -35px;
+  white-space: nowrap;
+}

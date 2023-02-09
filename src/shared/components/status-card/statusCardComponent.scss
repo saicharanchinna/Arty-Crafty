@@ -1,0 +1,45 @@
+@import "src/assets/styles/common";
+
+.status-card-wrapper {
+
+  .status-card {
+    font-family: $status-card-font-family, sans-serif;
+    background-color: $status-card-default-bg-color;
+    padding: 11px 15px;
+    font-size: 12px;
+    border: 1px solid #F5FDFB;
+    border-radius: 5px;
+    color: $status-card-color;
+    font-weight: $status-card-font-weight;
+    width: 100%;
+
+    &.wrap {
+      width: 300px;
+    }
+
+    &.error {
+      background-color: $status-card-error-bg-color;
+      color: getTextColorForBackground($status-card-error-bg-color);
+    }
+
+    &.success {
+      background-color: $status-card-success-bg-color;
+      color: getTextColorForBackground($status-card-success-bg-color);
+    }
+
+    &.warning {
+      background-color: $status-card-warning-bg-color;
+      color: getTextColorForBackground($status-card-warning-bg-color);
+    }
+
+    &.info {
+      background-color: $status-card-info-bg-color;
+      color: getTextColorForBackground($status-card-info-bg-color);
+    }
+
+    &.default {
+      background-color: $status-card-default-bg-color;
+      color: $status-card-color;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import "src/assets/styles/common";
+
+// Range Slider
+$range-width: 100% !default;
+$range-handle-size: 48px !default;
+$range-track-height: 25px !default;
+$range-label-width: 60px !default;
+$range-handle-color: #ddd;
+$range-track-color: #ddd;
+
+.progress-bar-container {
+  //margin: 100px 0;
+  width: $range-width;
+  position: relative;
+  height: $range-track-height;
+  border-radius: 100px;
+  background: $progressbar-default-bg-color;
+
+  .progress-bar-component {
+    min-width: 200px;
+  }
+}
+
+.progress-bar-filled {
+  -webkit-appearance: none;
+  height: $range-track-height;
+  border-radius: 100px;
+  min-width: 35px;
+  background: $progressbar-filled-bg-color;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: $range-handle-size;
+    height: $range-handle-size;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      //background: #DDD;
+    }
+
+  }
+
+  &:active::-moz-range-thumb {
+    background: #DDD;
+  }
+}
+
+// Firefox Overrides
+::-moz-range-track {
+  background: $range-track-color;
+  background: #D6E8FF;;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
+
+.progress-bar-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: -85px;
+  white-space: nowrap;
+  height: auto;
+  width: auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px #d0d0d0, 0 5px 6px #d0d0d0;
+  font-weight: 700;
+  margin: 15px 5px;
+  padding: 5px;
+
+  @include lg {
+    height: 70px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+  }
+    @include md {
+      height: 70px;
+      width: 120px;
+      margin: 0;
+      padding: 0;
+    }
+
+  ::after {
+    content: " ";
+    position: absolute;
+    left: 32px;
+    bottom: -15px;
+    border-top: 15px solid #FFFFFF;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: none;
+    @include lg {
+      left: 45px;
+    }
+  }
+
+  .card-title {
+    font-size: 12px;
+    @include lg() {
+      font-size: 16px;
+    }
+  }
+
+  .card-description {
+    font-size: 10px;
+    color: #727476;
+    @include lg() {
+      font-size: 14px;
+    }
+  }
+}
+
+.progress-bar-percentage-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: unset;
+  white-space: nowrap;
+  width: 5%;
+  min-width: 30px;
+  height: 19px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  margin: 3px 3px 0 0;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+}

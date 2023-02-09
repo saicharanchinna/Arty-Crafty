@@ -1,0 +1,91 @@
+@import "src/assets/styles/common";
+
+.recommended-test-card {
+  background: #FFF;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+  @include md {
+    margin: 10px;
+  }
+  @include lg {
+    height: 310px;
+  }
+
+  .highly-recommended-button-tag {
+    background: #2866B1;
+    border-radius: 5px 5px 0 5px;
+    padding: 5px;
+    color: #FFF;
+    white-space: nowrap;
+    font-size: 10px;
+    position: absolute;
+    right: 25px;
+    @include lg {
+      width: 75%;
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .recommended-test-card-image {
+    margin: 10px 0;
+    @include lg() {
+      margin: 0;
+    }
+
+    img {
+      width: 100px;
+      @include lg() {
+        width: auto;
+      }
+      @include xs() {
+        width: 100px;
+      }
+    }
+
+    @include lg() {
+      padding: 40px 0 0 0;
+      margin: 24px 0;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .recommended-test-card-title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #000000;
+    white-space: nowrap;
+    padding-left: 15px;
+    @include lg() {
+      font-size: 20px;
+      white-space: break-spaces;
+    }
+    @include md() {
+      font-size: 16px;
+      white-space: break-spaces;
+    }
+  }
+
+  .recommended-test-card-description {
+    font-weight: 400;
+    font-size: 8px;
+    color: #ABABAB;
+    padding-left: 5px;
+    @include lg() {
+      font-size: 14px;
+    }
+    @include md() {
+      font-size: 10px;
+    }
+  }
+
+  .buy-now-button {
+    padding: 30px 0;
+  }
+}
