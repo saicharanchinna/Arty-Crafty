@@ -1,0 +1,33 @@
+.category-template-component{
+  margin:20px;
+  display: flex;
+  padding: 15px;
+  width: 600px;
+  .category-display-image{
+    width: 150px;
+    height: 150px;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .category-content-wrapper{
+    margin-left: 20px;
+    width: 100%;
+    .category-name{
+      color: #000000;
+      opacity: 0.5;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .category-description{
+      margin-top: 10px;
+      height: calc(100% - 70px);
+      flex: 1 1;
+    }
+    .category-action-wrapper{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

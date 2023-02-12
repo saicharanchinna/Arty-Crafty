@@ -7,8 +7,9 @@ import HomeScreen from "../screens/home/HomeScreen";
 import {
     HOME_ROUTE,
     NOT_FOUND_ROUTE,
-    REGISTER_ROUTE,
+    REGISTER_ROUTE, TEST_ROUTE,
 } from "../constants/RoutesConfig";
+import TestScreen from "../screens/test/testScreen";
 
 export interface NavigatorProps {
 
@@ -20,8 +21,8 @@ const Navigator = (props: NavigatorProps) => {
         <>
             <Routes>
                 <Route element={<AppLayout/>}>
-
                 </Route>
+                <Route path={TEST_ROUTE} element={<TestScreen/>}/>
                 <Route element={<AuthLayout/>}>
                     {/*<Route path={REGISTER_ROUTE} element={<RegisterScreen/>}/>*/}
                 </Route>

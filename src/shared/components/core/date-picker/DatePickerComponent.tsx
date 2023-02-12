@@ -79,7 +79,7 @@ const DatePickerComponent = (props: DatePickerComponentProps) => {
                     disabled={disabled}
                     maxDate={maxDate}
                     clearIcon={null}
-                    calendarIcon={<img src={ImageConfig.Calendar} alt={"calendar-icon"}/>}
+                    // calendarIcon={}
                     className={'date-picker-field ' + (hasError ? "has-error" : '') + ' ' + className}
                     value={ value? new Date(value) : undefined}/>
                 {(errorMessage && hasError) && (
