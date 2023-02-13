@@ -1,6 +1,7 @@
 import './testScreen.scss';
 import React from 'react';
 import CategoryTemplateComponent from "../../shared/components/category-template/CategoryTemplateComponent";
+import ProfileTemplateComponent from "../../shared/components/profile-template/ProfileTemplateComponent";
 
 interface TestScreenProps {
 
@@ -10,8 +11,9 @@ interface TestScreenProps {
 const TestScreen = (props: TestScreenProps) => {
 
     return (
-        <div>
+        <div className={'test'}>
             <CategoryTemplateComponent/>
+            <ProfileTemplateComponent/>
         </div>
     )
 };
