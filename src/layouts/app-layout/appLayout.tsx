@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {IRootReducerState} from "../../store/reducers";
 import {CommonService} from "../../shared/services";
 import {logout} from "../../store/actions/account.action";
-
+import CategoryTemplateComponent from "../../shared/components/category-template/CategoryTemplateComponent";
 export interface AppLayoutProps {
 
 }

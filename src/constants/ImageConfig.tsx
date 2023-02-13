@@ -1,4 +1,4 @@
-import Calendar from "./../assets/images/calendar.svg";
+// import Calendar from "./../assets/images/calendar.svg";
 import PosterBackground from "./../assets/images/poster-background.png";
 
 import SafeAndSecure from "../assets/icons/how-it-works/safe-and-secure.svg";
@@ -11,6 +11,7 @@ import RegisterPoster from "../assets/images/register-poster.png";
 import AntigenTestPoster from "../assets/images/antigen.png";
 import RTPCRTestPoster from "../assets/images/rtpcr.png"
 
+import BasicArt from '../assets/images/basicArt.png';
 import Logo from "./../assets/logo.png";
 // @ts-ignore
 import {ReactComponent as LeftArrow} from "./../assets/icons/chevron-left.svg";
@@ -22,7 +23,7 @@ import InfoIcon from "../assets/icons/info-icon.png"
 
 export {
     Logo,
-    Calendar,
+    // Calendar,
     LeftArrow,
     RegisterPoster,
     PosterBackground,
@@ -35,5 +36,6 @@ export {
     HomePoster,
     Dial,
     LoadingGif,
-    InfoIcon
+    InfoIcon,
+    BasicArt
 }
