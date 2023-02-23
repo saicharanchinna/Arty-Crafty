@@ -10,6 +10,7 @@ import HomePoster from "../assets/images/home-poster.png";
 import RegisterPoster from "../assets/images/register-poster.png";
 import AntigenTestPoster from "../assets/images/antigen.png";
 import RTPCRTestPoster from "../assets/images/rtpcr.png"
+import MotoImage from "../assets/images/moto.png";
 
 import BasicArt from '../assets/images/basicArt.png';
 import Logo from "./../assets/logo.png";
@@ -36,6 +37,7 @@ export {
     HomePoster,
     Dial,
     LoadingGif,
+    MotoImage,
     InfoIcon,
     BasicArt
 }
