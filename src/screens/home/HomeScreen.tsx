@@ -22,7 +22,6 @@ const HomeScreen = (props: HomeScreenProps) => {
                 <div className={'get-started-button'}>
                     <ButtonComponent
                         className={'width-50'}
-
                     >
                         Get Started
                     </ButtonComponent>
