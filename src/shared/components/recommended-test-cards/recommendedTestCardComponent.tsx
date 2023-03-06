@@ -37,13 +37,13 @@ const RecommendedTestCardComponent = (props: RecommendedTestCardComponentProps) 
                         <Col xs={4} sm={4}>
                             <div className="buy-now-button">
                                 <a href={ctaLink} target="_blank" rel="noreferrer">
-                                    <ButtonComponent
-                                        className={tag?.includes("Highly") ? "zoomInZoomOut" : ""}
-                                        fullWidth={false}
-                                        size={"sm"}
-                                        type={"button"}>
-                                        Buy Now
-                                    </ButtonComponent>
+                                    {/*<ButtonComponent*/}
+                                    {/*    className={tag?.includes("Highly") ? "zoomInZoomOut" : ""}*/}
+                                    {/*    fullWidth={false}*/}
+                                    {/*    size={"sm"}*/}
+                                    {/*    type={"button"}>*/}
+                                    {/*    Buy Now*/}
+                                    {/*</ButtonComponent>*/}
                                 </a>
                             </div>
                         </Col>

@@ -2,7 +2,7 @@ import './testScreen.scss';
 import React from 'react';
 import CategoryTemplateComponent from "../../shared/components/category-template/CategoryTemplateComponent";
 import ProfileTemplateComponent from "../../shared/components/profile-template/ProfileTemplateComponent";
-import ProfilePageComponent from "../../shared/components/profile-page/ProfilePageComponent";
+import ProfilePageComponent from "../profile-page/ProfilePageComponent";
 
 interface TestScreenProps {
 
