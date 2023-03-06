@@ -1,0 +1,44 @@
+.previous-arts-component-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 25px;
+  column-gap: 25px;
+  .previous-image-wrapper{
+    //border: 2px solid #ABABAB;
+  }
+}
+.attachment-preview-dialog {
+
+  .attachment-preview-dialog-header {
+    .attachment-preview-dialog-title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px 0;
+    }
+  }
+
+  .attachment-preview-dialog-body {
+    display: flex;
+    justify-content: center;
+  }
+.previous-art-dialog-button{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+  //.attachment-preview-dialog-footer {
+  //  display: flex;
+  //  align-items: center;
+  //  justify-content: center;
+  //  margin-top: 20px;
+  //  column-gap: 20px;
+  //}
+}
