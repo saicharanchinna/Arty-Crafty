@@ -21,7 +21,7 @@ const ArtistArtsDetailsComponent = (props: ArtistArtsDetailsComponentProps) => {
                     <TabsComponent
                         value={activeTab}
                         allowScrollButtonsMobile={false}
-                        onUpdate={( v: any) => {
+                        onUpdate={(e:any,v: any) => {
                             setActiveTab(v);
                         }}
                         variant={"fullWidth"}

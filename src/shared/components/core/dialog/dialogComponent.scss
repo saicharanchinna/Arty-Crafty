@@ -1,6 +1,12 @@
 @import "src/assets/styles/common";
 
 .dialog-container {
+  .dialog-close-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
   .dialog-title {
     font-weight: 700;
     .dialog-title-wrapper{

@@ -1,7 +1,7 @@
 import {
     HAND_SHAKE,
     HOME_ROUTE, HOW_IT_WORKS_ROUTE, INTAKE_FORM_ROUTE,
-    NOT_FOUND_ROUTE,
+    NOT_FOUND_ROUTE, PROFILE_PAGE_ROUTE,
     REGISTER_ROUTE, TEST_RESULT_ROUTE,
     TEST_ROUTE,
 } from "../../constants/RoutesConfig";
@@ -38,6 +38,9 @@ const HandShake = () => {
     return HAND_SHAKE;
 }
 
+const ArtistProfileRoute = () => {
+    return PROFILE_PAGE_ROUTE;
+}
 const RouteConfigService = {
     HomeRoute,
     HowItWorksRoute,
@@ -46,7 +49,8 @@ const RouteConfigService = {
     TestResultRoute,
     NotFoundRoute,
     TestRoute,
-    HandShake
+    HandShake,
+    ArtistProfileRoute
 }
 
 export default RouteConfigService;

@@ -9,7 +9,9 @@
   row-gap: 25px;
   column-gap: 25px;
   .previous-image-wrapper{
-    //border: 2px solid #ABABAB;
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
 .attachment-preview-dialog {

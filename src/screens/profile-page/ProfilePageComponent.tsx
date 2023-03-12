@@ -4,8 +4,6 @@ import ButtonComponent from "../../shared/components/core/button/ButtonComponent
 import {useNavigate} from "react-router-dom";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import ProfileTemplateComponent from "../../shared/components/profile-template/ProfileTemplateComponent";
-import ArtImageComponent from "../../shared/components/art-image/ArtImageComponent";
 import ArtistArtsDetailsComponent from "../artist-arts-details/ArtistArtsDetailsComponent";
 
 interface ProfilePageComponentProps {
@@ -41,8 +39,9 @@ const ProfilePageComponent = (props: ProfilePageComponentProps) => {
                             handleClick={() => {
                                 window.open(`https://wa.me/${mobileNumber}`)
                             }}
-                            startIcon={<WhatsAppIcon color={"primary"}/>}
-                            variant={'outlined'}
+                            startIcon={<WhatsAppIcon color={"secondary"}/>}
+                            color={"success"}
+                            variant={'contained'}
                         >
                             WhatsApp
                         </ButtonComponent>
@@ -52,21 +51,6 @@ const ProfilePageComponent = (props: ProfilePageComponentProps) => {
             <div className={'art-gallery-wrapper'}>
                 <hr/>
                 <ArtistArtsDetailsComponent/>
-                {/*{*/}
-                {/*    previousArts?.map((art: any) => {*/}
-                {/*        return (*/}
-                {/*            <ArtImageComponent*/}
-                {/*                key={art.id}*/}
-                {/*                attachmentFileName={art.attachmentFileName}*/}
-                {/*                attachmentUrl={art.attachmentUrl}*/}
-                {/*                height={400}*/}
-                {/*                width={300}*/}
-                {/*                isFile={false}*/}
-                {/*                options={false}*/}
-                {/*            />*/}
-                {/*        )*/}
-                {/*    })*/}
-                {/*}*/}
             </div>
         </div>
     );

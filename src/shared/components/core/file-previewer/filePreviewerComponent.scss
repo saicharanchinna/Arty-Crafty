@@ -1,8 +1,98 @@
 @import "src/assets/styles/common";
 
-.attachment-preview-wrapper{
-  .attachment-actions{
+.attachment-preview-wrapper {
+  .attachment-actions {
     display: flex;
+  }
+}
 
+.attachment-wrapper {
+  max-width: 300px;
+  .attachment-preview-content {
+    .attachment-preview-content-title {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1;
+      color: #282c3f;
+      margin-bottom: 6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 200px;
+    }
+    .attachment-preview-content-description{
+      margin-top: 10px;
+      color: #535766;
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: 400;
+      display: block;
+      max-width: 240px;
+    }
+  }
+}
+
+.attachment-preview-dialog {
+  .attachment-preview-dialog-image-content-wrapper {
+    display: flex;
+    padding: 20px;
+    column-gap: 40px;
+
+    .attachment-preview-dialog-content-header {
+      .attachment-preview-dialog-content-header-title {
+        color: #282c3f;
+        padding: 0 20px 0 0;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 20px;
+      }
+
+      .attachment-preview-dialog-content-header-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        .attachment-preview-dialog-content-header {
+          color: #282c3f;
+          padding: 0 20px 0 0;
+          font-size: 24px;
+          opacity: .8;
+          font-weight: 700;
+          line-height: 1;
+        }
+      }
+
+      .attachment-preview-dialog-content-header-description {
+        color: #535665;
+        padding: 20px 20px 14px 0;
+        font-size: 20px;
+        opacity: .8;
+        font-weight: 400;
+      }
+
+      .attachment-preview-dialog-content-header-price {
+        color: #282c3f;
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+    }
+
+    .attachment-preview-dialog-button {
+      margin-top: 20px;
+    }
+  }
+}
+.attachment-image-wrapper{
+  &:hover{
+    cursor: pointer;
   }
 }

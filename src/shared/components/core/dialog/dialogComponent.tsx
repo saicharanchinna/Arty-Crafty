@@ -54,7 +54,6 @@ const DialogComponent = (props: React.PropsWithChildren<DialogComponentProps>) =
             onClose();
         }
     }, [onClose]);
-
     return (
         <Dialog
             open={open}
@@ -73,27 +72,17 @@ const DialogComponent = (props: React.PropsWithChildren<DialogComponentProps>) =
             fullWidth={fullWidth}
             className={`dialog-container ${className}`}
         >
-            {(title || isShowCancel) && <DialogTitle className="dialog-title">
-                <div className="d-flex justify-content-space-between">
-                    {title && title?.length >46 ? <TooltipComponent
-                        placement={'top'}
-                        tooltip={title}
-                        arrow={true}>
-                        <div className={'dialog-title-wrapper'}>{title}</div>
-                    </TooltipComponent>:
-                        <>{title}</>
-                    }
-                    {isShowCancel && <div>
-                        <ButtonComponent
-                            variant={'icon'}
-                            color={"secondary"}
-                            handleClick={handleOnClose}>
-                            <CancelIcon/>
-                        </ButtonComponent>
-                    </div>}
+            {(isShowCancel) &&
+                <div className={'dialog-close-icon'}>
+                    <ButtonComponent
+                        variant={'icon'}
+                        color={"warning"}
+                        handleClick={handleOnClose}
+                    >
+                        <CancelIcon/>
+                    </ButtonComponent>
                 </div>
-            </DialogTitle>}
-
+            }
             {description && <div className="dialog-description">{description}</div>}
             <DialogContent className="dialog-content-wrapper">
                 {children}
