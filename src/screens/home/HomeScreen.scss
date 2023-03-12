@@ -1,35 +1,48 @@
 @import "src/assets/styles/common";
 
-.home-screen {
+.page-container {
+  height: calc(100vh - 60px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  .moto-title-and-image-wrapper{
+.home-screen {
+  background-image: url("./../../assets/images/home-page-background.png");
+  background-repeat: repeat;
+  background-cover:content;
+  .moto-title-and-image-wrapper {
     display: flex;
-    padding:70px 30px 30px 30px;
+    padding: 70px 60px 30px 60px;
     justify-content: space-between;
     align-items: center;
-    background-color: #D6E8FF;
     flex-wrap: wrap;
-    .moto-title-wrapper{
-      width: 40%;
-      .moto-title{
+
+    .moto-title-wrapper {
+      width: 60%;
+
+      .moto-title {
         font-family: "Arial Black";
         font-size: 50px;
-        line-height: 65px;
+        color: #000000;
+        //line-height: 65px;
       }
-      .moto-sub-title{
+
+      .moto-sub-title {
         margin-top: 10px;
         font-family: "Arial";
         font-size: 25px;
         color: #828282;
       }
-      .get-started-button{
+
+      .get-started-button {
         margin-top: 20px;
         display: flex;
         justify-content: center;
       }
     }
-    .moto-image-wrapper{
-      .moto-image{
+
+    .moto-image-wrapper {
+      .moto-image {
         height: 400px;
         width: 400px;
       }

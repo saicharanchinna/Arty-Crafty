@@ -11,7 +11,7 @@ import RegisterPoster from "../assets/images/register-poster.png";
 import AntigenTestPoster from "../assets/images/antigen.png";
 import RTPCRTestPoster from "../assets/images/rtpcr.png"
 import MotoImage from "../assets/images/moto.png";
-
+import HomePageBackground from "../assets/images/home-page-background.png";
 import BasicArt from '../assets/images/basicArt.png';
 import Logo from "./../assets/logo.png";
 // @ts-ignore
@@ -32,6 +32,7 @@ export {
     RTPCRTestPoster,
     SafeAndSecure,
     FastAssessment,
+    HomePageBackground,
     AIResult,
     Compliance,
     HomePoster,
